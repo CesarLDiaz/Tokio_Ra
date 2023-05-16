@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable-no, initial-scale=1.0, maximum-scale-1.0, minimum-scale-1.0"
+    />
+    <meta name="author" content="Haunter88" />
+    <meta name="description" content="Lo mejor del anime" />
+    <meta name="keywords" content="anime, shonen, isekai, accion, epico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/favicon.ico.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cd49b50e4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Tokio Ra</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #24cc2c;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #ece92a;
+      }
+
+      .content {
+        font-family: "Quicksand", sans-serif;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3em;
+      }
+      .contacto {
+        background-color: #222222;
+        box-shadow: 0 0 20px 0 rgba(13, 14, 13, 0.7);
+        color: #fff;
+      }
+      .encab {
+        color: #fff;
+        margin-left: 2em;
+      }
+      .contacto-form * {
+        padding: 1em;
+      }
+      .contacto-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .contacto-form form .block {
+        grid-column: 1/3;
+      }
+      .contacto-form form p {
+        margin: 0;
+        padding: 1em;
+      }
+      .contacto-form input,
+      .contacto-form button {
+        width: 100%;
+        padding: 0.7em;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #d63031;
+        outline: none;
+        color: #fff;
+      }
+      .contacto-form form button {
+        background-color: #b70a21;
+        border: none;
+        text-transform: uppercase;
+        padding: 1em;
+      }
+      .contacto-form form button:hover,
+      .contacto-form form button:focus {
+        background: #d63031;
+        color: #000000;
+        transition: background-color 1s ease-out;
+        outline: 0;
+      }
+      #motivo {
+        width: 100%;
+        background-color: #222222;
+        color: #fff;
+        border-color: #d63031;
+        border-width: 1px;
+        margin-top: 20px;
+      }
+      #mensaje {
+        border-color: #d63031;
+        border-width: 1px;
+        width: 100%;
+        background-color: #222222;
+        margin-top: 20px;
+        outline: none;
+        color: #fff;
+      }
+
+      .contacto-info {
+        background-color: #000000;
+      }
+      .contacto-info h4,
+      .contacto-info ul,
+      .contacto-info p {
+        margin: 0 0 1rem 0;
+        text-align: center;
+      }
+      .contacto-info p img {
+        width: 70%;
+      }
+      .contacto-info ul {
+        list-style: none;
+        padding: 0;
+      }
+      .contacto-info ul li {
+        padding: 0.3em;
+      }
+      .lista {
+        float: none;
+      }
+      .listaIconos {
+        background-color: #000000;
+      }
+
+      .logo {
+        font-family: "Quicksand", sans-serif;
+        text-align: center;
+        font-size: 3em;
+        color: #080808;
+        margin-top: 0;
+      }
+      .footer {
+        background-color: #0f0f0f;
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+        clear: both;
+
+        bottom: 0;
+        width: 100%;
+      }
+      @media (min-width: 700px) {
+        body {
+          padding: 0 0 4rem 0;
+        }
+        .contacto {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La Historia de Tokio Ra</h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html" target="_blank">Home </a></li>
+          <li>
+            <a href="preferencias.html" target="_blank"> Preferencias</a>
+          </li>
+          <li>
+            <a href="Audiovisuales.html" target="_blank">Audiovisuales </a>
+          </li>
+          <li>
+            <a href="Galeria.html" target="_blank">Galeria </a>
+          </li>
+          <li>
+            <a href="contacto.html" class="active">Contacto </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <br />
+      <h2 class="logo">Contacto</h2>
+
+      <div class="contacto">
+        <div class="contacto-form">
+          <h3 class="encab">Contacto</h3>
+          <form action="enviar.php" method="post">
+            <p>
+              <label for="nombre">Nombre </label>
+              <input type="text" name="nombre" id="nombre" required />
+            </p>
+            <!-- <p>
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" id="apellido" />
+            </p> -->
+            <p>
+              <label for="mail">E-mail</label>
+              <input type="email" name="mail" id="mail" required />
+            </p>
+            <p>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" name="telefono" id="telefono" />
+            </p>
+            <p>
+              <label for="motivo">Motivo del contacto</label>
+              <select name="motivo" id="motivo">
+                <option value="Remera">Remera de Tokio Ra</option>
+                <option value="Gorra">Gorra de Tokio Ra</option>
+                <option value="Producto">Producto a pedido</option>
+                <option value="Programador">Contacto con el programador</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </p>
+            <p class="block">
+              <label for="mensaje">Comentarios</label>
+              <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+            </p>
+            <p class="block">
+              <button type="submit">Enviar</button>
+            </p>
+          </form>
+        </div>
+        <div class="contacto-info">
+          <br />
+          <h4 class="title-info">Mas información</h4>
+          <ul class="listaIconos">
+            <li class="lista">
+              <i
+                class="fa-solid fa-location-dot fa-la"
+                style="color: #e3e7ed"
+              ></i>
+              Río Gallegos - Santa Cruz
+            </li>
+            <li class="lista">
+              <a href="http://www.instagram.com/haunter8821"
+                ><i
+                  class="fa-brands fa-instagram fa-la"
+                  style="color: #e3e7ed"
+                ></i>
+                Instagram
+              </a>
+            </li>
+            <li class="lista">
+              <i
+                class="fa-sharp fa-solid fa-envelope fa-la"
+                style="color: #e3e7ed"
+              ></i>
+              cesar_l_diaz570@hotmail.com
+            </li>
+          </ul>
+          <p>
+            <img
+              src="/assets/img/Contacto/Tokio_collage.jpeg"
+              alt="Tokio collage"
+            />
+          </p>
+          <p id="creador">Haunter88</p>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">Derechos reservados &copy; 2023</footer>
+  </body>
+</html>
