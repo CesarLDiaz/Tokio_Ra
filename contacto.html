@@ -147,7 +147,7 @@
         border-width: 1px;
         margin-top: 20px;
       }
-      #mensaje {
+      #message {
         border-color: #d63031;
         border-width: 1px;
         width: 100%;
@@ -241,35 +241,57 @@
       <div class="contacto">
         <div class="contacto-form">
           <h3 class="encab">Contacto</h3>
-          <form name="contact" action="https://formsubmit.co/cesar_l_diaz570@hotmail.com" method="POST">
-            <input type="hidden" name="_subject" value="Nuevo contacto!">
-            <input type="hidden" name="_next" value="https://tokio-ra.netlify.app/gracias.html">
+          <form
+            name="contact"
+            action="https://formsubmit.co/cesar_l_diaz570@hotmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Nuevo contacto!" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://tokio-ra.netlify.app/gracias.html"
+            />
             <p>
-              <label for="nombre">Nombre 
-              <input type="text" name="nombre" id="nombre" required /></label>
+              <label for="nombre"
+                >Nombre <input type="text" name="nombre" id="nombre" required
+              /></label>
             </p>
-            
+
             <p>
-              <label for="mail">E-mail
-              <input type="email" name="email" id="mail" required /></label>
+              <label for="mail"
+                >E-mail <input type="email" name="email" id="mail" required
+              /></label>
             </p>
             <p>
-              <label for="telefono">Teléfono
-              <input type="tel" name="telefono" id="telefono" /></label>
+              <label for="telefono"
+                >Teléfono <input type="tel" name="telefono" id="telefono"
+              /></label>
             </p>
             <p>
-              <label for="motivo">Motivo del contacto
-              <select value="motivo" id="motivo" name="role[]">
-                <option value="Remera">Remera de Tokio Ra</option>
-                <option value="Gorra">Gorra de Tokio Ra</option>
-                <option value="Producto">Producto a pedido</option>
-                <option value="Programador">Contacto con el programador</option>
-                <option value="Otro">Otro</option>
-              </select> </label>
+              <label for="motivo"
+                >Motivo del contacto
+                <select value="motivo" id="motivo" name="role[]">
+                  <option value="Remera">Remera de Tokio Ra</option>
+                  <option value="Gorra">Gorra de Tokio Ra</option>
+                  <option value="Producto">Producto a pedido</option>
+                  <option value="Programador">
+                    Contacto con el programador
+                  </option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </label>
             </p>
             <p class="block">
-              <label for="message">Comentarios
-              <textarea name="message" value="message" id="message" rows="4"></textarea></label>
+              <label for="message"
+                >Comentarios
+                <textarea
+                  name="message"
+                  value="message"
+                  id="message"
+                  rows="4"
+                ></textarea>
+              </label>
             </p>
             <p class="block">
               <button type="submit">Enviar</button>
@@ -319,3 +341,4 @@
     <footer class="footer">Derechos reservados &copy; 2023</footer>
   </body>
 </html>
+
