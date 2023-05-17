@@ -241,15 +241,14 @@
       <div class="contacto">
         <div class="contacto-form">
           <h3 class="encab">Contacto</h3>
-          <form name="contact" enctype="multipart/form-data" method="POST" data-netlify="true">
+          <form name="contact" action="https://formsubmit.co/cesar_l_diaz570@hotmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo contacto!">
+            <input type="hidden" name="_next" value="https://tokio-ra.netlify.app/gracias.html">
             <p>
               <label for="nombre">Nombre 
               <input type="text" name="nombre" id="nombre" required /></label>
             </p>
-            <!-- <p>
-              <label for="apellido">Apellido
-              <input type="text" name="apellido" id="apellido" /></label>
-            </p> -->
+            
             <p>
               <label for="mail">E-mail
               <input type="email" name="email" id="mail" required /></label>
@@ -269,8 +268,8 @@
               </select> </label>
             </p>
             <p class="block">
-              <label for="mensaje">Comentarios
-              <textarea name="message" value="mensaje" id="mensaje" rows="4"></textarea></label>
+              <label for="message">Comentarios
+              <textarea name="message" value="message" id="message" rows="4"></textarea></label>
             </p>
             <p class="block">
               <button type="submit">Enviar</button>
