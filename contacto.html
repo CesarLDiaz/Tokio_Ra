@@ -241,36 +241,36 @@
       <div class="contacto">
         <div class="contacto-form">
           <h3 class="encab">Contacto</h3>
-          <form name="contact" enctype="multipart/form-data" method="POST" data-netlify="true">
+          <form name="contact" enctype="multipart/form-data" method="POST" netlify>
             <p>
-              <label for="nombre">Nombre </label>
-              <input type="text" name="nombre" id="nombre" required />
+              <label for="nombre">Nombre 
+              <input type="text" name="nombre" id="nombre" required /></label>
             </p>
             <!-- <p>
-              <label for="apellido">Apellido</label>
-              <input type="text" name="apellido" id="apellido" />
+              <label for="apellido">Apellido
+              <input type="text" name="apellido" id="apellido" /></label>
             </p> -->
             <p>
-              <label for="mail">E-mail</label>
-              <input type="email" name="mail" id="mail" required />
+              <label for="mail">E-mail
+              <input type="email" name="email" id="mail" required /></label>
             </p>
             <p>
-              <label for="telefono">Teléfono</label>
-              <input type="tel" name="telefono" id="telefono" />
+              <label for="telefono">Teléfono
+              <input type="tel" name="telefono" id="telefono" /></label>
             </p>
             <p>
-              <label for="motivo">Motivo del contacto</label>
-              <select value="motivo" id="motivo">
+              <label for="motivo">Motivo del contacto
+              <select value="motivo" id="motivo" name="role[]">
                 <option value="Remera">Remera de Tokio Ra</option>
                 <option value="Gorra">Gorra de Tokio Ra</option>
                 <option value="Producto">Producto a pedido</option>
                 <option value="Programador">Contacto con el programador</option>
                 <option value="Otro">Otro</option>
-              </select>
+              </select> </label>
             </p>
             <p class="block">
-              <label for="mensaje">Comentarios</label>
-              <textarea name="mensaje" value="mensaje" id="mensaje" rows="4"></textarea>
+              <label for="mensaje">Comentarios
+              <textarea name="message" value="mensaje" id="mensaje" rows="4"></textarea></label>
             </p>
             <p class="block">
               <button type="submit">Enviar</button>
