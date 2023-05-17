@@ -20,7 +20,7 @@ $mensaje .= "Enviado el: " . date('d/m/Y', time());
 $para = "cesar_l_diaz570@hotmail.com";
 $asunto = "Nuevo contacto de la Web";
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
-header ('Location:index.html');
+mail($para, $asunto, utf8_decode($mensaje), $header)or die ("Error!");
+header ("Location: index.html");
 
 ?>
