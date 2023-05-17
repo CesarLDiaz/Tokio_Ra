@@ -1,6 +1,5 @@
 <?php
 $nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
 $mail= $_POST['mail'];
 $telefono= $_POST['telefono'];
 $motivo= $_POST['motivo'];
@@ -18,8 +17,8 @@ $mensaje .= "Motivo del ocntacto: " . $motivo . " \r\n";
 $mensaje .= "Mensaje: ". $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'cesar_l_diaz570@hotmail.com';
-$asunto = 'Nuevo contacto de la Web';
+$para = "cesar_l_diaz570@hotmail.com";
+$asunto = "Nuevo contacto de la Web";
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 header ('Location:index.html');
