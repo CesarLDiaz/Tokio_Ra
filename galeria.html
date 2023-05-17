@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable-no, initial-scale=1.0, maximum-scale-1.0, minimum-scale-1.0"
+    />
+    <meta name="author" content="Haunter88" />
+    <meta name="description" content="Lo mejor del anime" />
+    <meta name="keywords" content="anime, shonen, isekai, accion, epico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/favicon.ico.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cd49b50e4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tokio Ra</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #24cc2c;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #ece92a;
+      }
+      h2 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        text-shadow: 0px 0px 6px black;
+        font-family: sans-serif;
+        margin-top: 5px;
+      }
+      a {
+        text-decoration: none;
+      }
+      #carrusel {
+        height: 800px;
+        overflow: hidden;
+      }
+      .container-carrusel {
+        height: 100%;
+        position: relative;
+      }
+      .tarjeta {
+        height: 100%;
+        text-align: center;
+      }
+      .tarjeta img{
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+      .flechas {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+      }
+      #puntos{
+        justify-content: space-around;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .footer {
+        background-color: #0f0f0f;
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+        clear: both;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La Historia de Tokio Ra</h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html" target="_blank">Home </a></li>
+          <li>
+            <a href="preferencias.html" target="_blank">Preferencias </a>
+          </li>
+          <li>
+            <a href="Audiovisuales.html" target="_blank">Audiovisuales </a>
+          </li>
+          <li>
+            <a href="Galeria.html"  class="active">Galeria </a>
+          </li>
+          <li><a href="contacto.html" target="_blank">Contacto </a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2></h2>
+    <div id="carrusel"> 
+      <div class="container-carrusel" id="carrusel-1">
+        <div class="tarjeta" id="tarjetaItem1"><img
+            src="/assets/img/Galeria/Tokio_caja.jpeg"
+            alt="Tokio-caja"/>
+        </div>      
+        <div class="flechas">
+          <a href="#carrusel-13"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-2"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-2">
+        <div class="tarjeta" id="tarjetaItem2"><img src="/assets/img/Galeria/Tokio_cama.jpeg" alt="Tokio-cama">
+        </div>
+      
+        <div class="flechas">
+          <a href="#carrusel-1"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-3"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-3">
+        <div class="tarjeta" id="tarjetaItem3"><img src="/assets/img/Galeria/Tokio_cama2.jpeg" alt="Tokio-cama-2">
+        </div>      
+        <div class="flechas">
+          <a href="#carrusel-2"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-4"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-4">
+        <div class="tarjeta" id="tarjetaItem4">
+          <img src="/assets/img/Galeria/Tokio_flojo.jpeg" alt="Tokio-flojo">
+        </div>      
+        <div class="flechas">
+          <a href="#carrusel-3"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-5"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-5">
+        <div class="tarjeta" id="tarjetaItem5"><img src="/assets/img/Galeria/Tokio_lavarropas.jpeg" alt="Tokio-lavarropas">
+        </div>      
+        <div class="flechas">
+          <a href="#carrusel-4"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-6"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-6">
+        <div class="tarjeta" id="tarjetaItem6">
+          <img src="/assets/img/Galeria/Tokio_mirada.jpeg" alt="Tokio-mirada">
+        </div>  
+        <div class="flechas">
+          <a href="#carrusel-5"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-7"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div> 
+      </div>  
+      <div class="container-carrusel" id="carrusel-7">
+        <div class="tarjeta" id="tarjetaItem7"><img src="/assets/img/Galeria/Tokio_mirada2.jpeg" alt="Tokio-miarad-2">
+        </div>  
+        <div class="flechas">
+          <a href="#carrusel-6"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-8"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-8">
+        <div class="tarjeta" id="tarjetaItem8"><img src="/assets/img/Galeria/Tokio_rugido.jpeg" alt="Tokio-rugido">
+        </div>  
+        <div class="flechas">
+          <a href="#carrusel-7"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-9"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-9">
+        <div class="tarjeta" id="tarjetaItem9"><img src="/assets/img/Galeria/Tokio_sillon.jpg" alt="Tokio-sillon">
+        </div>  
+        <div class="flechas">
+          <a href="#carrusel-8"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-10"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-10">
+        <div class="tarjeta" id="tarjetaItem10"><img src="/assets/img/Galeria/Tokio_sillon2.jpeg" alt="Tokio-sillon-2">
+        </div>  
+        <div class="flechas">
+          <a href="#carrusel-9"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-11"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-11">
+        <div class="tarjeta" id="tarjetaItem11"><img src="/assets/img/Galeria/Tokio_sillon3.jpg" alt="Tokio-sillon-3">
+        </div>  
+        <div class="flechas">
+          <a href="#carrusel-10"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-12"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-12">
+        <div class="tarjeta" id="tarjetaItem12"><img src="/assets/img/Galeria/Tokio_smoking.jpeg" alt="Tokio-smoking">
+        </div>  
+        <div class="flechas">
+          <a href="#carrusel-11"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-13"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+      <div class="container-carrusel" id="carrusel-13">
+        <div class="tarjeta" id="tarjetaItem13"><img src="/assets/img/Galeria/Tokio_vuelve_a_casa.jpg" alt="Tokio-vuelve-a-casa">
+        </div>  
+        <div class="flechas">
+          <a href="#carrusel-12"><i class="fa-solid fa-circle-arrow-left fa-2xl" style="color: #38e222;"></i></a>
+          <a href="#carrusel-1"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #38e222;"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="puntos">
+    
+      <a href="#carrusel-1"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-2"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-3"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-4"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-5"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-6"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-7"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-8"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-9"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-10"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-11"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-12"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+      <a href="#carrusel-13"><i class="fa-solid fa-paw fa-lg" style="color: #0a5804;"></i></a>
+    </div>
+
+    <footer class="footer">Derechos reservados &copy; 2023</footer>
+  </body>
+</html>

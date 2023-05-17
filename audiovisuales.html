@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable-no, initial-scale=1.0, maximum-scale-1.0, minimum-scale-1.0"
+    />
+    <meta name="author" content="Haunter88" />
+    <meta name="description" content="Lo mejor del anime" />
+    <meta name="keywords" content="anime, shonen, isekai, accion, epico" />
+    <link rel="shortcut icon" href="/favicon.ico.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tokio Ra</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #24cc2c;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #ece92a;
+      }
+      h2 {
+        font-size: 34px;
+        font-weight: 300;
+        text-align: center;
+        padding: 0;
+
+        font-family: sans-serif;
+        margin-top: 5px;
+      }
+      .footer {
+        background-color: #0f0f0f;
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+        margin-top: 450px;
+        clear: both;
+      }
+      .contenedor-all {
+        width: 250px;
+        margin: auto;
+        perspective: 2000px;
+        position: relative;
+      }
+      .carrusel {
+        width: 100%;
+        position: absolute;
+        animation: rotar 12s infinite linear;
+        transform-style: preserve-3d;
+        margin-top: 30px;
+      }
+      .carrusel figure {
+        width: 100%;
+        height: 210px;
+        overflow: hidden;
+        position: absolute;
+        box-shadow: 0px 0px 20px 0px black;
+        transition: all 300ms;
+      }
+      .carrusel figure:hover {
+        box-shadow: 0px 0px 0px 0px black;
+        transition: all 300ms;
+      }
+      .carrusel:hover {
+        animation-play-state: paused;
+        cursor: pointer;
+      }
+      .carrusel figure:nth-child(1) {
+        transform: rotateY(0deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(2) {
+        transform: rotateY(36deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(3) {
+        transform: rotateY(72deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(4) {
+        transform: rotateY(108deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(5) {
+        transform: rotateY(144deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(6) {
+        transform: rotateY(180deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(7) {
+        transform: rotateY(216deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(8) {
+        transform: rotateY(252deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(9) {
+        transform: rotateY(288deg) translateZ(390px);
+      }
+      .carrusel figure:nth-child(10) {
+        transform: rotateY(324deg) translateZ(390px);
+      }
+
+      .carrusel video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        max-width: 100%;
+        transition: all 300ms;
+        max-height: 100%;
+      }
+      .carrusel video:hover {
+        transform: scale(1.3);
+      }
+      @keyframes rotar {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La Historia de Tokio Ra</h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html" target="_blank">Home </a></li>
+          <li>
+            <a href="preferencias.html" target="_blank">Preferencias </a>
+          </li>
+          <li>
+            <a href="Audiovisuales.html" class="active">Audiovisuales</a>
+          </li>
+          <li>
+            <a href="Galeria.html" target="_blank">Galeria </a>
+          </li>
+          <li><a href="contacto.html" target="_blank">Contacto </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contenedor-all">
+      <div class="carrusel">
+        <figure>
+          <a href="/assets/video/Tokio_carpeta.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/Tokio_carpeta.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+        <figure>
+          <a href="/assets/video/Tokio_collage_estado.mp4" target="_blank">
+            <video controls autoplay muted>
+              <source
+                src="/assets/video/Tokio_collage_estado.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </a>
+        </figure>
+        <figure>
+          <a href="/assets/video/tokio_dos_cumple.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/tokio_dos_cumple.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+        <figure>
+          <a href="/assets/video/Tokio_jugando_barbijo.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/Tokio_jugando_barbijo.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+        <figure>
+          <a href="/assets/video/Tokio_lava_su_cabeza.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/Tokio_lava_su_cabeza.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+        <figure>
+          <a href="/assets/video/Tokio_mesa_estado.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/Tokio_mesa_estado.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+        <figure>
+          <a href="/assets/video/Tokio_pequeño.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/Tokio_pequeño.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+        <figure>
+          <a href="/assets/video/tokio_salvaje.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/tokio_salvaje.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+        <figure>
+          <a href="/assets/video/Tokio_señora_que_hace.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/Tokio_señora_que_hace.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+        <figure>
+          <a href="/assets/video/Tokio_ventana.mp4" target="_blank"
+            ><video controls autoplay muted>
+              <source
+                src="/assets/video/Tokio_ventana.mp4"
+                type="video/mp4"
+              /></video
+          ></a>
+        </figure>
+      </div>
+    </div>
+
+    <footer class="footer">Derechos reservados &copy; 2023</footer>
+  </body>
+</html>
